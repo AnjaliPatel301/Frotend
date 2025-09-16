@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button><a href="http://127.0.0.1:5500/Attributes.html">Back to Notes</a></button>
+     <h1>Capture Attribute</h1>
+        <p>The capture attribute is used in HTML forms to specify that a file input should directly open the device's camera or microphone when activated, allowing users to capture media (like photos or audio) on the spot. This attribute is particularly useful for mobile devices, enhancing user experience by streamlining the process of uploading media files.</p>
+        <p>he capture attribute specifies that, optionally, a new file should be captured, and which device should be used to capture that new media of a type defined by the accept attribute.
+
+Values include user and environment. The capture attribute is supported on the file input type.
+
+The capture attribute takes as its value a string that specifies which camera to use for capture of image or video data, if the accept attribute indicates that the input should be of one of those types.</p>
+ <p>Example</p>
+    <pre>&lt;input type="file" accept="image/*" capture="environment"&gt;</pre>
+
+    <p>In this example, when the user interacts with the file input, it will open the device's rear camera to capture an image.</p>
+    <p>Note: The capture attribute is a hint to the browser, and its behavior may vary depending on the device and browser support. Not all browsers or devices may honor this attribute, and users may still have the option to select files from their device storage instead of capturing new media.</p>
+    <ul>
+    <li>Browser Support</li>
+    <li>Attribute Values</li>
+    <li>Related Pages</li>
+    <li>HTML <input> type="file"</li>
+    <li>HTML Global Attributes</li>
+    <li>Media Capture and Streams API</li>
+    </ul>
+</body>
+</html>

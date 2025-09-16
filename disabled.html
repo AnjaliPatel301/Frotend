@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <button><a href="http://127.0.0.1:5500/Attributes.html">Back to Notes</a></button>
+ <h1>disabled attribute</h1>
+    <p>The disabled attribute is a boolean attribute in HTML that can be applied to various form elements, such as &lt;input&gt;, &lt;button&gt;, &lt;select&gt;, &lt;textarea&gt;, and &lt;fieldset&gt;. When an element has the disabled attribute, it becomes non-interactive and cannot be focused or activated by the user. This means that users cannot click on, type into, or select the element.</p>
+    <p>When an element is disabled, it is typically displayed in a grayed-out or dimmed style to indicate that it is not available for interaction. Additionally, disabled elements do not submit their values when a form is submitted.</p>
+    <p>Example usage:</p>
+    <pre>&lt;input type="text" disabled&gt;</pre>
+    <input type="text" disabled>
+    <pre>&lt;button disabled&gt;Submit&lt;/button&gt;</pre>
+    <button disabled>Submit</button>
+    <pre>&lt;select disabled&gt;
+  &lt;option value="1"&gt;Option 1&lt;/option&gt;
+  &lt;option value="2"&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;</pre>
+    <select disabled>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+    </select>
+    <p>In this example, the input field, button, and select dropdown are all disabled, meaning users cannot interact with them.</p>
+    <p>It's important to note that the disabled attribute is a boolean attribute, so it does not require a value. Simply including the attribute (e.g., disabled) is sufficient to disable the element. To enable the element again, you can remove the disabled attribute from the element.</p>
+    <ul>
+    <li>Browser Support</li>
+    <li>Related Pages</li>
+    <li>HTML &lt;input&gt; type="text"</li>
+    <li>HTML &lt;button&gt; element</li>
+    <li>HTML &lt;select&gt; element</li>
+    <li>HTML &lt;textarea&gt; element</li>
+    <li>HTML &lt;fieldset&gt; element</li>
+    </ul>
+
+    <example>&lt;fieldset disabled&gt;
+  &lt;legend&gt;Personal Information&lt;/legend&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/fieldset&gt;</example>
+    <fieldset disabled>
+    <legend>Personal Information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <button type="submit">Submit</button>
+    </fieldset>
+    <p>In this example, the entire fieldset is disabled, which means that all form controls within it (the text input, email input, and submit button) are also disabled and cannot be interacted with by the user.</p>
+    <p>Note: The disabled attribute can also be applied to the &lt;optgroup&gt; element to disable a group of options within a &lt;select&gt; dropdown.</p>
+    <pre>&lt;select&gt;
+    &lt;optgroup label="Group 1" disabled&gt;
+        &lt;option value="1"&gt;Option 1&lt;/option&gt;
+        &lt;option value="2"&gt;Option 2&lt;/option&gt;
+
+    &lt;/optgroup&gt;
+    &lt;optgroup label="Group 2"&gt;
+        &lt;option value="3"&gt;Option 3&lt;/option&gt;
+        &lt;option value="4"&gt;Option 4&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</pre>
+    <select>
+        <optgroup label="Group 1" disabled>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+
+        </optgroup>
+        <optgroup label="Group 2">
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+        </optgroup>
+    </select>
+    <p>In this example, the first optgroup (Group 1) is disabled, which means that all options within that group (Option 1 and Option 2) are also disabled and cannot be selected by the user. The second optgroup (Group 2) is not disabled, so its options (Option 3 and Option 4) are available for selection.</p>
+</ul>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="http://127.0.0.1:5500/Attributes.html">Back to Notes</a></button>
+    <h1>pattern attribute</h1>
+    <hr>
+    <p>The pattern attribute is used to specify a regular expression that the input field's value
+    must match in order for the form to be submitted.</p>
+    <p>This attribute can be used with the following input types: <b>text,
+    search, url, tel, email, and password</b></p>
+    <h2>Example</h2>
+    <form action="/action_page.php">
+        <label for="phone">Enter your phone number (format: 123-456-7890):</label><br>
+        <input type="text" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
+        <input type="submit">
+      </form> 
+      <p>In the example above, the input field requires the user to enter a phone number in the format of three digits, followed by a hyphen, three more digits, another hyphen, and four digits (e.g., 123-456-7890).</p>
+      <p>If the user enters a value that does not match the specified pattern, the form will not be submitted and an error message will be displayed.</p>
+      <hr>
+      <p>Note: The pattern attribute is not supported in all browsers, so it's important to test your forms in different browsers to ensure compatibility.</p>
+      <p>Also, it's important to use the pattern attribute in conjunction with other form validation techniques, such as server-side validation, to ensure that user input is properly validated and sanitized.</p>
+      <p>Overall, the pattern attribute is a useful feature for validating user input in forms, but it's important to use it correctly and ensure compatibility across different browsers.</p>
+      <hr>
+      
+</body>
+</html>

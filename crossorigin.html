@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="http://127.0.0.1:5500/Attributes.html">Back to Notes</a></button>
+    <h1>Autocomplete Attribute</h1>
+    <p>The crossorigin attribute is used in HTML to handle Cross-Origin Resource Sharing (CORS) requests for certain elements, such as &lt;img&gt;, &lt;script&gt;, &lt;link&gt;, and &lt;video&gt;. It specifies how the element should behave when fetching resources from a different origin (domain) than the one that served the web page.</p>
+    <p>The crossorigin attribute can take the following values:</p>
+    <ul>
+        <li>anonymous: This value indicates that the request for the resource should be made without credentials (like cookies or HTTP authentication). If the server does not include the appropriate CORS headers, the resource will not be loaded.</li>
+        <li>use-credentials: This value indicates that the request for the resource should be made with credentials. The server must include the appropriate CORS headers to allow this; otherwise, the resource will not be loaded.</li>
+        <li>omit: This value indicates that no CORS request should be made, and the resource will be fetched without any CORS handling. This is typically used when you want to avoid CORS checks altogether.</li>
+    </ul>
+    <p>Example usage:</p>
+    <pre>&lt;img src="https://imgv3.fotor.com/images/videoImage/wonderland-girl-generated-by-Fotor-ai-art-generator.jpg" crossorigin="anonymous"&gt;</pre>
+    <img width="500px" src="https://imgv3.fotor.com/images/videoImage/wonderland-girl-generated-by-Fotor-ai-art-generator.jpg" alt="">
+    <img width="500px" src="https://my.alfred.edu/zoom/_images/foster-lake.jpg" alt="">
+   <img width="480px" src="https://tse1.mm.bing.net/th/id/OIP.zgiDOfpjSb5jqL9bSPKK8QHaD8?pid=Api&P=0&h=180" alt="">
+    <p>In this example, the image will be fetched from "https://example.com/image.jpg" without sending any credentials. If the server does not allow cross-origin requests, the image will not be displayed.</p>
+    <p>It's important to note that the crossorigin attribute is only relevant for resources that are fetched from a different origin. If the resource is on the same origin as the web page, the crossorigin attribute has no effect.</p>
+    <ul>
+</body>
+</html>

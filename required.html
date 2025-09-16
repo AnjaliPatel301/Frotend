@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <button><a href="http://127.0.0.1:5500/Attributes.html">Back to Notes</a></button>
+        <h1>required attribute</h1>
+        <hr>
+        <p>The required attribute is a boolean attribute that can be added to an input,textarea, element to indicate that the field must be filled out before the form can be submitted.</p>
+        <p>This attribute can be used with the following input types: <b>text,
+        search, url, tel, email, password, number, checkbox, radio, file, and textarea</b></p>
+        <h2>Example</h2>
+        <form action="/action_page.php">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit">
+          </form> 
+          <p>In the example above, the input fields for name and email are marked as required, which means that the user must fill out these fields before submitting the form. If the user tries to submit the form without filling out these fields, the browser will display an error message and prevent the form from being submitted.</p>
+          <hr>
+          <p>Note: The required attribute is not supported in all browsers, so it's important to test your forms in different browsers to ensure compatibility.</p>
+          <p>Also, it's important to use the required attribute in conjunction with other form validation techniques, such as server-side validation, to ensure that user input is properly validated and sanitized.</p>
+          <p>Overall, the required attribute is a useful feature for ensuring that users provide necessary information in forms, but it's important to use it correctly and ensure compatibility across different browsers.</p>
+          <hr>
+          <h2>Example</h2>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <input type="submit" value="Submit">
+                </form>
+                <p>In the example above, both the first name and last name fields are marked as required. The user must fill out both fields before submitting the form.</p>
+                <p>If the user tries to submit the form without filling out either field, the browser
+                will display an error message and prevent the form from being submitted.</p>
+                <p>Note: The required attribute is supported in most modern browsers, but it's still
+                important to test your forms in different browsers to ensure compatibility.</p>
+                <p>Also, it's important to use the required attribute in conjunction with other form
+                validation techniques, such as server-side validation, to ensure that user input is properly validated and
+                sanitized.</p>
+                <p>Overall, the required attribute is a useful feature for ensuring that users provide necessary
+
+
+                information in forms, but it's important to use it correctly and ensure compatibility across different browsers.</p>
+                <hr>
+
+</body>
+</html>

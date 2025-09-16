@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="http://127.0.0.1:5500/Attributes.html">Back to Notes</a></button>
+    <h1>accept Attribute</h1>
+
+    <p>The HTML <code>accept</code> attribute is used with the <code>&lt;input&gt;</code> element to specify the types of files that the server accepts when a user uploads a file. This attribute provides a way to filter the file types that can be selected in the file input dialog, helping to ensure that users only upload files of the desired format.</p>
+    <p>The value of the <code>accept</code> attribute can be a comma-separated list of one or more file types or MIME types. Here are some examples of how to use the <code>accept</code> attribute:</p>
+   <ul>
+    <li>
+         The accept attribute specifies a filter for what file types the user can pick from the file input dialog box.
+
+Note: The accept attribute can only be used with <input type="file">.
+
+Tip: Do not use this attribute as a validation tool. File uploads should be validated on the server.
+The accept property is an attribute of the file <input> type. It was supported on the <form> element, but was removed in favor of file.
+
+Because a given file type may be identified in more than one manner, it's useful to provide a thorough set of type specifiers when you need files of specific type, or use the wild card to denote a type of any format is acceptable.
+
+For instance, there are a number of ways Microsoft Word files can be identified, so a site that accepts Word files might use an <input> like this:
+
+<h1>Example</h1>
+
+<pre>&lt;input type="file" name="myFile" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"&gt;</pre>
+<p>This would allow the user to select files with the .doc or .docx extensions, as well as files with the specified MIME types.</p>
+
+
+    </li>
+   
+<li>
+    
+ 
+</body>
+</html>

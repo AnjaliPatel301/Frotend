@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="http://127.0.0.1:5500/Attributes.html">Back to Notes</a></button>
+    <h1>HTML Form Attribute</h1>
+<hr>
+<hr>
+<h1>Form Element
+</h1>
+<p>HTML forms, defined using the form Tags are essential for collecting user input on web pages. They incorporate a variety of interactive controls such as text fields, numeric inputs, email fields, password fields, checkboxes, radio buttons, and submit buttons. Over 85% of websites rely on forms to gather data from users, making them a fundamental component of modern web development.</p>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240418113951/image_2024-04-18_113951003-660.png" alt="">
+<hr>
+    <h3>The Action Attribute</h3>
+    <p>
+The action attribute defines the action to be performed when the form is submitted.
+
+Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data</p>
+    <p>The form attribute specifies one or more forms the <form element belongs to.</p>
+    <p>This attribute can be used with the following elements: <b>button, fieldset, input, label, meter, object, output, select, textarea</b></p>
+    <hr><h1>The Target Attribute</h1>
+    <ul>
+        <li>The target attribute specifies where to display the response that is received after submitting the form.</li>
+        <li>The target attribute can have one of the following values:</li>
+    </ul>
+<hr>
+<h1>he Method Attribute</h1>
+<ul>
+    <li>The method attribute specifies the HTTP method to be used when submitting the form data.</li>
+    <li>The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").</li>
+    <li>The default HTTP method when submitting form data is GET. </li>
+    <!-- <pre action="/action_page.php" method="get"><form action="/action_page.php" method="post"></pre> -->
+        example: <br>
+        <pre>&lt;form action="/action_page.php" method="get"&gt;</pre>
+        <pre>&lt;form action="/action_page.php" method="post"&gt;</pre><br>
+
+        <ul>
+           <b>Notes on GET:</b>
+            <li>Appends the form data to the URL, in name/value pairs</li>
+            <li>
+NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+<li>The length of a URL is limited (2048 characters)</li>
+<li>Useful for form submissions where a user wants to bookmark the result</li>
+<li>GET is good for non-secure data, like query strings in Google</li>
+            
+        </ul>
+        <br>
+         <ul>
+           <b>Notes on POST:</b>
+            <li>Sends the form data as an HTTP post transaction</li>
+            <li>Form submissions with POST cannot be bookmarked</li>
+            <li>There are no limits on the amount of form data to send</li>
+            <li>POST is better for sensitive data, like passwords</li>
+            <li>POST is more robust than GET, and can handle much more data</li>
+        </ul>
+</ul>
+
+<hr>
+    <h2>Example</h2
+    <form id="form1" action="/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit">
+      </form><br>
+        <form id="form2" action="/action_page.php">
+        First name: <input type="text" name="fname" form="form1"><br>
+        <form id="loginForm">
+  <label>Username: <input type="text" name="username" /></label>
+
+</form>
+
+<label
+  >Password: <input form="loginForm" type="password" name="password"
+/></label>
+<label>
+  Choose an option:
+  <select form="loginForm" name="options">
+    <option value="A">A</option>
+    <option value="B">B</option>
+  </select>
+</label>
+<label
+  >Description:
+  <textarea form="loginForm" rows="4" name="description">
+Hello, World!</textarea
+  >
+</label>
+<button form="loginForm" type="submit" name="submitLogin" value="Login">
+  Submit
+</button>
+<br>
+<hr>
+
+<p>form action: This attribute specifies where to send the form-data when a form is submitted. The value of this attribute is typically a URL.
+method: This attribute defines the HTTP method used to send the form-data. The values can be “get” or “post”.
+target: This attribute specifies where to display the response received after submitting the form. The values can be “_blank”, “_self”, “_parent”, “_top”, or the name of an iframe.
+enctype: This attribute is used when method=“post”. It specifies how the form-data should be encoded when submitting it to the server. The values can be “application/x-www-form-urlencoded”, “multipart/form-data”, or “text/plain”.
+autocomplete: This attribute specifies whether a form should have autocomplete on or off. When autocomplete is on, the browser automatically completes values based on values that the user has entered before.
+novalidate: This Boolean attribute specifies that the form-data should not be validated on submission.</p>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240313141357/HTMLForm3.gif" alt="">
+</body>
+</html>

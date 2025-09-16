@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button><a href="http://127.0.0.1:5500/Attributes.html">Back to Notes</a></button>
+        <h1>Element Timing Attribute</h1>
+            <p>The elementtiming attribute is used in HTML to specify that an element should be tracked for performance timing purposes. This attribute is part of the Element Timing API, which allows developers to measure the time it takes for specific elements on a web page to become visible or interactable.</p>
+            <p>When the elementtiming attribute is added to an HTML element, the browser will record the time it takes for that element to be rendered and become visible to the user. This information can be useful for optimizing the performance of web pages and improving user experience.</p>
+            <p>Example usage:</p>
+            <pre>&lt;div elementtiming="my-element"&gt;This is my element&lt;/div&gt;</pre>
+            <p>In this example, the div element is marked with the elementtiming attribute
+and given a name of "my-element". The browser will track the time it takes for this element to be rendered and become visible.</p>
+            <p>To access the timing information for elements with the elementtiming attribute, developers can use the PerformanceObserver API. This allows them to listen for performance entries related to element timing and analyze the data to identify performance bottlenecks.</p>
+            <p>It's important to note that the elementtiming attribute is not widely supported in all browsers, so developers should check for compatibility before using it in production code.</p>
+            <p>Overall, the elementtiming attribute is a useful tool for measuring and optimizing the performance of web pages, helping to ensure a better user experience.</p>
+            <ul>
+                <li>Browser Support</li>
+                <li>Attribute Values</li>
+                <li>Related Pages</li>
+                <li>Element Timing API</li>
+                <li>PerformanceObserver API</li>
+                <li>HTML Global Attributes</li>
+            </ul>
+
+            <h1>Example</h1>
+            <div elementtiming="example-element" style="width: 200px; height: 100px; background-color: lightblue; text-align: center; line-height: 100px; margin-top: 20px;">
+                This is an example element with the elementtiming attribute.
+            </div>
+            
+</body>
+
+</html>

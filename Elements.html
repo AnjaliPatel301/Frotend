@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button><a href="index.html">Back to Notes</a></button>
+    <h1>HTML Element</h1>
+    <br>
+    <hr>
+
+    <p>An <b>HTML Element</b> consists of a start tag, content, and an end tag, which together define the element's structure and functionality. Elements are the basic building blocks of a webpage and can represent different types of content, such as text, links, images, or headings.
+
+For example, the <p> element for paragraphs includes opening and closing tags with text content in between.</p>
+
+<p>For example, the <p> element for paragraphs includes opening and closing tags with text content in between.</p>    
+<img width="700px" src="https://media.geeksforgeeks.org/wp-content/uploads/20231211172217/Group-3-2.jpg" alt="">
+<hr>
+
+<h1>HTML Element Code Example:</h1>
+In this example <p> is a starting tag, </p> is an ending tag and it contains some content between the tags, which form an element
+<p>In this example, &lt;img&gt; is a self-closing tag that includes attributes such as src (source) and alt (alternative text).</p>
+    <p>HTML elements can also have attributes that provide additional information or modify their behavior. Attributes are included in the opening tag and consist of a name and a value, separated by an equals sign (=). For example, the &lt;a&gt; element is used to create hyperlinks:</p>
+    <pre>&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;</pre>
+    <p>In this example, the href attribute specifies the URL of the link.</p>
+    <p>Overall, HTML elements are essential for structuring and formatting content on a webpage, and understanding how to use them is fundamental to web development.</p>
+   
+    <hr>
+    <h1>Some Key Points About HTML Elements</h1>
+    <ol>
+
+        <li>Syntax:
+        <ul>
+            <li>An opening tag indicates where the content begins: <tagname>.
+</li>
+<li>A closing tag indicates where the content ends: </tagname>.</li>
+<li>The actual content resides between the opening and closing tags.</li>
+</ul>
+</li>
+<br>
+        <li>Attributes:
+        <ul>
+            <li>Attributes provide additional information about an element and are included in the opening tag.</li>
+            <li>They consist of a name and a value, separated by an equals sign (=).</li>
+            <li>Example: &lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt; (href is the attribute name, and "https://www.example.com" is the attribute value).</li>
+        </ul>
+        </li>
+<br>
+        <li>Self-Closing Tags:
+        <ul>
+            <li>Some HTML elements are self-closing and do not require a closing tag.</li>
+            <li>Example: &lt;img src="image.jpg" alt="Description of image"&gt; (the img tag is self-closing).</li>
+        </ul>
+        </li>
+<br>
+        <li>Nesting:
+        <ul>
+            <li>HTML elements can be nested within other elements to create complex structures.</li>
+            <li>Ensure that nested elements are properly closed in the correct order.</li>
+        </ul>
+        </li>
+<br>
+        <li>Block vs. Inline Elements:
+        <ul>
+            <li>Block-level elements (e.g., &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;) start on a new line and take up the full width available.</li>
+            <li>Inline elements (e.g., &lt;a&gt;, &lt;span&gt;, &lt;img&gt;) do not start on a new line and only take up as much width as necessary.</li>
+        </ul>
+        </li>
+        <br>
+
+
+    </ol>
+    <br>
+    <hr>
+    <h1>Nested HTML Elements</h1>
+    <p>Nested HTML Elements occur when one element is placed inside another, creating a hierarchical structure. This structure is crucial for organizing content on web pages effectively, ensuring that different elements relate logically and visually to each other.</p>
+<p> <html> tag contains the <head> and <body>. The <head> and <body> tag contain other elements so it is called a nested element.</p>
+
+<hr>
+<h1>Necessary to Add an End Tag</h1>
+
+<p>For non-empty HTML elements, if you forget to add a closing or end tag, modern browsers may automatically add it in some cases.</p>
+<p>However, this can cause issues when you add additional HTML elements later on. Therefore, it is best practice to always include the closing tag for non-void HTML elements.</p>
+
+<b>Output: This Image is showing the Browser's Developer Tools and you can see that the missing closing tag of the paragraph element in the above-written code is automatically added by the browser without showing any error.</b>
+<br><br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240115082036/add.png" alt="">
+
+<br>
+
+<hr>
+<h1>HTML Empty Element</h1>
+<p>HTML Elements without any content i.e., that do not print anything are called Empty elements. Empty HTML elements do not have an ending tag. For instance
+    br,hr,input etc are HTML elements.</p>
+    <p>Example: In this example <br> tag doesn't print anything. It is used as a line break that breaks the line between <h2> and <p> tags.</p>
+
+<hr>
+<h1>Block-Level Elements and Inline Elements</h1>
+<p>In HTML, elements are broadly categorized into two main types based on how they display in the document layout: block-level elements and inline elements.</p>
+
+<p>HTML elements are categorized into two main types: Block-Level Elements and Inline Elements. Understanding the difference between these two types is crucial for effective web design and layout.</p>
+<p><b>1. Block-Level Elements </b>
+
+
+- Block-level elements typically start on a new line and take up the full width available to them, regardless of their actual content width. This means they stack vertically and can contain other block-level elements as well as inline elements. Here are some examples of block-level elements:</p>
+<ul>Examples:
+    <li>&lt;div&gt;: A generic container for flow content, often used for styling or layout purposes.</li>
+    <li>&lt;p&gt;: Represents a paragraph of text.</li>
+    <li>&lt;h1&gt; to &lt;h6&gt;: Heading elements, with &lt;h1&gt; being the highest level and &lt;h6&gt; the lowest.</li>
+    <li>&lt;ul&gt; and &lt;ol&gt;: Unordered
+        and ordered list elements, respectively.</li>
+    <li>&lt;table&gt;: Used to create a table structure.</li>
+</ul>
+<ul>
+    <li>Block-level elements start on a new line and take up the full width available (by default).</li>
+    <li>They create a "block" of content that is visually separated from other elements.</li>
+    <li>Common block-level elements include &lt;div&gt;, &lt;p&gt;, &lt;h1&gt; to &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, and &lt;table&gt;.</li>
+    <li>Block-level elements can contain other block-level elements as well as inline elements.</li>
+
+</ul>
+
+<hr>
+<p><b>2. Inline Elements </b>
+- Inline elements, on the other hand, do not start on a new line and only take  
+up as much width as necessary based on their content. They flow within the surrounding text and can only contain other inline elements or text. Here are some examples of inline elements:</p>
+<ul>Examples:
+    <li>&lt;a&gt;: Represents a hyperlink, allowing users to navigate to other pages or resources.</li>
+    <li>&lt;span&gt;: A generic inline container for phrasing content,
+        often used for styling purposes.</li>
+    <li>&lt;img&gt;: Embeds an image in the document.</li>
+    <li>&lt;strong&gt;: Indicates strong importance, typically displayed in bold.</li>
+    <li>&lt;em&gt;: Indicates emphasis, typically displayed in italics.</li>
+</ul>
+<ul>
+    <li>Inline elements do not start on a new line and only take up as much width as necessary.</li>
+    <li>They flow within the surrounding text and do not create a separate block.</li
+    <li>Common inline elements include &lt;a&gt;, &lt;span&gt;, &lt;img&gt;, &lt;strong&gt;, and &lt;em&gt;.</li>
+    <li>Inline elements can only contain other inline elements or text, not block-level elements
+    </li>
+</ul>       
+<hr>
+<h1>Best Practices When Using HTML Elements</h1>
+<ul>
+    <li>Always use semantic HTML elements to improve accessibility and SEO.</li>
+    <li>Ensure that all opening tags have corresponding closing tags, except for self-closing tags.</li>
+    <li>Use attributes appropriately to enhance the functionality and appearance of elements.</li>
+    <li>Keep your HTML code clean and well-organized for better readability and maintenance.</li>
+    <li>Test your HTML in different browsers to ensure consistent rendering and behavior.</li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <p>HTML elements are the building blocks of HTML pages. They are represented by tags, which are enclosed in angle brackets (&lt; &gt;). Most HTML elements have an opening tag and a closing tag, with the content in between.</p>
+    <p>For example, the &lt;p&gt; element is used to define a paragraph of text:</p>
+    <pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre>
+    <p>In this example, &lt;p&gt; is the opening tag, &lt;/p&gt; is the closing tag, and "This is a paragraph." is the content of the element.</p>
+    <p>Some HTML elements are self-closing and do not require a closing tag. For example, the &lt;img&gt; element is used to embed images in a webpage:</p>
+    <pre>&lt;img src="image.jpg" alt="Description of image"&gt;</pre>
+    <p>In this example, &lt;img&gt; is a self-closing tag that includes attributes such as src (source) and alt (alternative text).</p>
+    <p>HTML elements can also have attributes that provide additional information or modify their behavior. Attributes are included in the opening tag and consist of a name and a value, separated by an equals sign (=). For example, the &lt;a&gt; element is used to create hyperlinks:</p>
+    <pre>&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;</pre>
+    <p>In this example, the href attribute specifies the URL of the link.</p>
+    <p>Overall, HTML elements are essential for structuring and formatting content on a webpage, and understanding how to use them is fundamental to web development.</p>
+    <ul> -->
+    
+</body>
+</html>
