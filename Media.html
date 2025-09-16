@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>
+        <a href="index.html">
+             Back to Home
+        </a>
+    </button>
+    <h1>HTML Media</h1>
+    <p>HTML5 introduced new media elements to handle multimedia content more effectively. The two
+    primary media elements are <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>.</p>       
+    <h2>1. The &lt;audio&gt; Element</h2>
+    <p>The <code>&lt;audio&gt;</code> element is used to embed
+    sound content in a web page. It supports multiple audio formats, including MP3, WAV, and OGG.</p>
+    <h3>Example:</h3>
+    <audio controls>
+        <source src="audiofile.mp3" type="audio/mpeg">
+        <source src="audiofile.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <h2>2. The &lt;video&gt; Element</h2>
+    <p>The <code>&lt;video&gt;</code> element is used to embed video content in a web page. It supports multiple video formats, including MP4, WebM, and OGG.</p>
+    <h3>Example:</h3>
+    <video width="400" controls>
+        <source src="videofile.mp4" type="video/mp4">
+        <source src="videofile.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <h2>Attributes of &lt;audio&gt; and &lt;video&gt; Elements</h2>
+    <ul>
+        <li><code>controls</code>: Adds playback controls (play, pause, volume, etc.)</li>
+        <li><code>autoplay</code>: Starts playing the media as soon as it is ready</li>
+        <li><code>loop</code>: Repeats the media automatically when it ends</li>
+        <li><code>muted</code>: Mutes the audio by default</li>
+        <li><code>poster</code> (video only): Specifies an image to be shown while the video is downloading or until the user hits the play button</li>
+    </ul>
+    <h2>3. Embedding Other Media Types</h2>
+    <p>For embedding other types of media, such as Flash or PDFs, the <code>&lt;embed&gt;</code> and <code>&lt;object&gt;</code> elements can be used. However, these are less common with the rise of HTML5.</p>
+    <h3>Example of &lt;embed&gt;:</h3>
+    <embed src="file.pdf" type="application/pdf" width="600" height="400">
+    <h3>Example of &lt;object&gt;:</h3>
+    <object data="file.pdf" type="application/pdf" width="600" height="400">
+        <p>Your browser does not support PDFs. <a href="file.pdf">Download the PDF</a>.</p>
+    </object>
+    <h2>Conclusion</h2>
+    <p>HTML5 media elements provide a simple and effective way to include audio and video content in web pages, enhancing the user experience with rich multimedia.</p>
+    
+</body>
+</html>
