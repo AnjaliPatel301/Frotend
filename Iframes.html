@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>
+        <a href="index.html">back to Notes-html</a>
+    </button>
+
+    <h1>Iframe</h1>
+    <p>The &lt;iframe&gt; tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document.</p>
+    <p>The &lt;iframe&gt; tag is often used to insert content from another source, such as an advertisement, a video, or a web page, into a web page.</p>
+    <p>Note: The &lt;iframe&gt; tag is not supported in HTML
+    4.01 Transitional.</p>
+    <h2>Example</h2>
+    <iframe src="https://www.w3schools.com" title="W3Schools Free
+    Online Web Tutorials" width="300" height="200"></iframe>
+    <p>The &lt;iframe&gt; element above embeds a web page from W3Schools.com into the current web page. The width and height attributes specify the size of the iframe.</p>
+    <h2>Attributes</h2>
+    <p>The &lt;iframe&gt; tag supports the following attributes:</p>
+    <ul>
+        <li>src: Specifies the URL of the page to embed</li>
+        <li>width: Specifies the width of the iframe</li>
+        <li>height: Specifies the height of the iframe</li>
+        <li>name: Specifies the name of the iframe</li>
+        <li>sandbox: Enables an ext 
+                ra set of restrictions for the content in the iframe</li>
+        <li>allow: Specifies a feature policy for the iframe</li>
+        <li>loading: Specifies whether to load the iframe immediately or to defer loading until it reaches a certain distance from the viewport</li>
+        <li>referrerpolicy: Specifies which referrer information to send when fetching the iframe content</li>
+        <li>title: Provides a title for the iframe, which is used for accessibility purposes</li>
+    </ul>
+    <h2>Note</h2>
+    <p>By default, if the embedded page is from a different origin (domain, protocol, or port) than the parent page, the embedded page cannot access the parent page's DOM (Document Object Model) due to security restrictions known as the Same-Origin Policy. This means that scripts running in the embedded page cannot interact with or manipulate the content of the parent page.</p>
+    <p>However, there are ways to enable communication between the embedded page and the parent
+    page, such as using the postMessage API, which allows for safe cross-origin communication.</p>
+    <p>It's important to note that the Same-Origin Policy is a security feature implemented by
+    web browsers to prevent malicious scripts from accessing sensitive information on other
+    websites. Therefore, it's essential to be cautious when embedding content from external sources and to ensure   that the embedded content is trustworthy.</p>           
+    <h2>Browser Support</h2>
+    <p>The &lt;iframe&gt; tag is supported in all major browsers.</p
+    <table>
+        <tr>
+            <th>Browser</th>
+            <th>Support</th>
+        </tr>
+        <tr>
+            <td>Chrome</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Firefox</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Safari</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Edge</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Opera</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
